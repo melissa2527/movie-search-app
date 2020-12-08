@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,132 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* Movies */
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  /* margin: 0; */
+  padding: 0;
+  background-color: rbg(244,244,244);
+  color: #333;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+}
+.title {
+  font-size: 4.4rem;
+  text-align: center;
+}
+.form {
+  display: grid;
+}
+.label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+.button {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+.button:hover {
+  background-color: rgba(0,0,0,0.85)
+}
+
+@media (min-width:786px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .input {
+    margin-bottom: 0;
+  }
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  width: 300px;
+  margin: 30px 20px;
+  background-color: whitesmoke;
+}
+.card--title {
+  margin: 1rem auto;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block
+}
+
+.header {
+  text-align: center;
+  background-color: #232323;
+  height: 20vh;
+  color: whitesmoke;
+  font-size: 150%;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 10px 5px #27272780;
+-moz-box-shadow: 0px 10px 5px #27272780;
+}
+
+.header-title {
+  padding: 50px;
+}
+
+.favorite {
+  text-align: center;
+  font-size: 200%;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+.like {
+  /* opacity: .5; */
+  color: rgba(139, 22, 22, 0.8);
+}
+.liked {
+  padding: 5px;
+  background-color: lightgreen;
 }
